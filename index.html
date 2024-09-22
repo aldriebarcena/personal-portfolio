@@ -3,50 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="resetsheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <nav class="navBar" id="top">
+        <div class="navLeftSideContainer">
+            
+            <div class="navLogoDropdown">
+                <button class="navLogoButton">
+                    AB
+                </button>
+                <div class="navLogoDropdownContent">
+                    <div class="navLogoSection">
+                        <img src="imgs/equalizer_icon.svg" alt="equalizer_icon" class="equalizerIcon">
+                        <div class="navLogoText"><a href="#" id="navLatestSongLink" target="_blank">Latest Song: Chosen - Blxst</a></div>
+                    </div>
+                    <div class="navLogoSection">
+                        <img src="imgs/cloud_icon.svg" alt="cloud_icon" class="equalizerIcon">
+                        <div class="navLogoText"><a href="https://weather.com/weather/today/l/50777b299bf75bd5ebffdb606fc4e7b0772529c1a784a518497b7a29494ee5df" id="navCurrWeatherLink" target="_blank"></a></div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="navRightSideContainer">
+            <img src="imgs/moon_icon.svg" alt="dark_mode_icon" class="moonIcon">
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            <!-- About information goes here -->
-        </p>
+            <div class="navMenuDropdown">
+                <button class="navMenuButton">
+                    <img src="imgs/menu_icon.svg" alt="menuIcon" class="menuIcon">
+                </button>
+                <div class="navMenuDropdownContent">
+                    <a href="#aboutSection">About Me</a>
+                    <a href="#projectSection">Top Projects</a>
+                    <a href="#contactSection">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="aboutSection" id="aboutSection">
+        <h2 class="aboutHeader">About Aldrie Van Barcena</h2>
+        <div class="aboutDescription">Aldrie is studying Computer Science at the University of California, Riverside. He is an aspiring Software Engineer that loves music, going to the gym, running, and hanging out with his friends.</div>
+        <div class="aboutLinks">
+            <button class="aboutLinkedIn"><a href="https://linkedin.com/in/aldriebarcena" target="_blank">LinkedIn</a></button>
+            <button class="aboutGitHub"><a href="https://github.com/aldriebarcena" target="_blank">GitHub</a></button>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <!-- Project entries go here -->
+    <section class="projectSection" id="projectSection">
+        <div class="projectHeader">Top Projects</div>
+        <div class="projectContainer">
+            <a href="https://hiss.ucrhighlanders.org" id="projectLink1" target="_blank">
+                <div class="project" id="project1">
+                    <div class="projectImgContainer">
+                        <img src="imgs/project1_img.png" alt="" class="projectImg" id="project1Img">
+                      </div>
+                    <div class="projectWordContainer">
+                        <div class="projectTitle">HiSS Website</div>
+                        <div class="projectDescription">-> Website for HiSS club at UCR, team project.</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://github.com/aldriebarcena/college-fb-game-predictor" id="projectLink2" target="_blank"> 
+                <div class="project" id="project2">
+                    <div class="projectImgContainer">
+                        <img src="imgs/project2_img.png" alt="" class="projectImg" id="project2Img">
+                      </div>
+                    <div class="projectWordContainer">
+                        <div class="projectTitle">Footbal Game Predictor</div>
+                        <div class="projectDescription">-> ML model predictor for game results in the MWC league of the 2023 season.</div>
+                    </div>
+                </div>
+            </a>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <br>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
-            <br>
-            <button type="submit">Send</button>
+    <section class="contactSection" id="contactSection">
+        <div class="contactHeader">Contact Me</div>
+
+        <form action="" id="contactForm">
+            <div class="inputFieldContainer" id="inputFieldContainerEmail">
+                <label for="inputEmail" class="inputLabel">Your Email</label>
+                <input type="email" id="inputEmail" class="inputText" required>
+            </div>
+            <div class="inputFieldContainer" id="inputFieldContainerSubject">
+                <label for="inputEmail" class="inputLabel">Subject</label>
+                <textarea id="inputSubject" class="inputText"  rows="3" required></textarea>
+            </div>
+            <div class="inputFieldContainer" id="inputFieldContainerMessage">
+                <label for="inputMessage" class="inputLabel">Message</label>
+                <textarea id="inputMessage" class="inputText"  rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submitButton">Submit</button>
         </form>
     </section>
 
-    <footer>
-        <p>&copy; 2024 My Portfolio</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
