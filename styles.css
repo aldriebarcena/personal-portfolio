@@ -264,6 +264,7 @@ a {
   width: 80%;
   margin: 50px auto;
   box-sizing: border-box;
+  margin-bottom: 100px;
 }
 
 .contactHeader {
@@ -310,4 +311,164 @@ a {
 .submitButton:hover {
   color: rgb(37, 37, 37);
   background-color: var(--text-color-white);
+}
+
+/* portrait tablets */
+@media only screen and (min-width: 600px) {
+  .navBar,
+  .aboutSection,
+  .projectSection,
+  .contactSection {
+    width: 65%;
+  }
+
+  .navBar {
+    margin-top: 30px;
+  }
+
+  .navLogoButton {
+    font-size: 20px;
+  }
+
+  .navLogoDropdownContent {
+    font-size: 15px;
+    min-width: 180px;
+  }
+
+  .navMenuDropdownContent a {
+    font-size: 16px;
+    min-width: 20px;
+  }
+}
+
+/* landscape tablets */
+@media only screen and (min-width: 768px) {
+  .navBar,
+  .aboutSection,
+  .projectSection,
+  .contactSection {
+    width: 65%;
+  }
+
+  .navBar {
+    margin-top: 30px;
+  }
+
+  .navLogoButton {
+    font-size: 20px;
+  }
+
+  .navLogoDropdownContent {
+    font-size: 15px;
+    min-width: 180px;
+  }
+
+  .navMenuDropdownContent a {
+    font-size: 16px;
+    min-width: 20px;
+  }
+}
+
+/* laptops */
+@media only screen and (min-width: 992px) {
+  .navBar,
+  .aboutSection,
+  .projectSection,
+  .contactSection {
+    width: 50%;
+  }
+
+  .navBar {
+    margin-top: 25px;
+    height: 100px;
+  }
+
+  .navLogoDropdownContent {
+    font-size: 15px;
+    min-width: 225px;
+  }
+
+  .navMenuDropdownContent a {
+    font-size: 15px;
+    min-width: 210px;
+  }
+
+  .projectHeader,
+  .contactHeader {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .projectTitle {
+    font-size: 20px;
+  }
+  .projectDescription {
+    font-size: 15px;
+  }
+
+  .aboutGitHub,
+  .aboutLinkedIn,
+  .submitButton {
+    height: 30px;
+  }
+  
+  #project1Img {
+    transform: translate(15px, 50.8px) scale(1.5);
+  }
+  #project2Img {
+    transform: translate(80px, 0px) scale(1.25);
+  }
+  
+}
+
+/* monitors */
+@media only screen and (min-width: 1200px) {
+  .navBar,
+  .aboutSection,
+  .projectSection,
+  .contactSection {
+    width: 50%;
+  }
+
+  .navBar {
+    margin-top: 25px;
+    height: 100px;
+  }
+
+  .navLogoDropdownContent {
+    font-size: 15px;
+    min-width: 225px;
+  }
+
+  .navMenuDropdownContent a {
+    font-size: 15px;
+    min-width: 210px;
+  }
+
+  .projectHeader,
+  .contactHeader {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .projectTitle {
+    font-size: 20px;
+  }
+  .projectDescription {
+    font-size: 15px;
+  }
+
+  .aboutGitHub,
+  .aboutLinkedIn,
+  .submitButton {
+    height: 30px;
+  }
+  
+  #project1Img {
+    transform: translate(10px, 50.8px) scale(1.75);
+  }
+  #project2Img {
+    transform: translate(80px, 0px) scale(1.25);
+  }
+  
 }
